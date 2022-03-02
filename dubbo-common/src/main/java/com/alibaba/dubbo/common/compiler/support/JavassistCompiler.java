@@ -119,6 +119,7 @@ public class JavassistCompiler extends AbstractCompiler {
                 }
             }
         }
+        cls.debugWriteFile();
         return cls.toClass(ClassHelper.getCallerClassLoader(getClass()), JavassistCompiler.class.getProtectionDomain());
     }
 

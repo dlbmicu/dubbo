@@ -292,6 +292,7 @@ public final class ClassGenerator {
                     }
                 }
             }
+            mCtc.debugWriteFile();
             return mCtc.toClass(loader, pd);
         } catch (RuntimeException e) {
             throw e;
